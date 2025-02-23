@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sister!</title>
+  <style>
+    /* Global Styles */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #E6E6FA;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+
+      /* Background Image Animation (without cropping) */
+      animation: changeBackground 20s infinite linear;
+      background-size: contain; /* Ensures the full image is visible */
+      background-position: center;
+      background-repeat: no-repeat; /* Prevent image repetition */
+      background-attachment: fixed; /* Keeps background fixed on scroll */
+    }
+
+    /* Background Image Animation */
+    @keyframes changeBackground {
+      0% {
+        background-image: url("image1.jpg"); /* Replace with your image */
+      }
+
+      25% {
+        background-image: url("image2.jpg"); /* Replace with your image */
+      }
+
+      50% {
+        background-image: url("image3.jpg"); /* Replace with your image */
+      }
+
+      75% {
+        background-image: url("image4.jpg"); /* Replace with your image */
+      }
+
+      100% {
+        background-image: url("image1.jpg");
+      }
+    }
+
+    /* Overlay Styles */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.1); /* Dark transparent overlay */
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 900px; /* Content width cap */
+      margin: 20px; /* Prevent content from touching screen edges */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: 0.8s ease;
+    }
+
+    /* Hover Effect */
+    .overlay:hover {
+      background-color: #FFB6C1; /* Light pink on hover */
+      opacity: 0.9;
+    }
+
+    /* Text Styling */
+    h1 {
+      font-size: 4vw; /* Responsive heading */
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 2vw; /* Responsive paragraph */
+      line-height: 1.8;
+    }
+
+    /* Responsive Design - Tablets (768px and below) */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 6vw; /* Larger text for tablets */
+      }
+
+      p {
+        font-size: 3vw;
+      }
+
+      .overlay {
+        padding: 30px;
+      }
+    }
+
+    /* Responsive Design - Mobile (480px and below) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 8vw; /* Larger heading for mobiles */
+      }
+
+      p {
+        font-size: 4vw; /* Fit small screens */
+      }
+
+      .overlay {
+        padding: 20px;
+      }
+
+      /* Static image on small screens for performance */
+      body {
+        animation: none; /* Stops animation */
+        background-image: url("image1.jpg"); /* Static fallback */
+      }
+    }
+
+    /* Large Screens (1200px and above) */
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 3.5em; /* Fixed large heading */
+      }
+
+      p {
+        font-size: 1.8em; /* Fixed paragraph size */
+      }
+
+      .overlay {
+        max-width: 1000px; /* Wider overlay */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+    <h1>Happy Birthday, My Dear Pagal Sister 🎉</h1>
+    <p>
+      "Happy Birthday to my wonderful pagal sister! Every moment we share is a cherished memory. 
+      May your day be filled with love, joy, and laughter. Here's to your special day and many more to come!"
+      And I hope you have a wonderful day filled with love, joy, and laughter. 🎂🎈🎁🎉
+      Important! Beta phad bhi lena paper bhi hai tumare pass. 😂
+    </p>
+  </div>
+</body>
+
+</html>
